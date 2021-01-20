@@ -1,38 +1,103 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+.App{
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
+  width: 100%;
+}
+.navbar{
+  border: 1px solid rgb(0, 0, 0);
+  background-image: linear-gradient(rgb(221, 210, 210),white);
+  padding-bottom: 20px;
+}
+.navbar .brand{
+  color: rgb(0, 0, 255) !important;
+  margin-left: 4vw;
+  font-size: 3.4vw;
+  z-index: 99;
+  font-family: 'Yesteryear', cursive;
+  text-shadow: 4px 4px 10px rgb(148, 151, 40,1);
+}
+.links{
+  z-index: 100;
+  margin-right: 5vw;
+  
+}
+.links a{
+  font-size: 1.3vw;
+  margin-left: 2vw;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(34, 38, 253) !important;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 10px rgb(148, 151, 40,1);
+  transition: all .8s ;
+}
+.links a:hover{
+  transform: scale(1.2);
+}
+.banner{
+  border: 12px black;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.banner .front{
+  width: 100%;
+  height: auto;
+}
+.banner-text{
+  font-family: 'Yesteryear', cursive;
   text-align: center;
+  font-size: 3vw;
+  color: rgb(71, 99, 226);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner-text span{
+  color: rgb(10, 43, 190);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about{
+  font-family: 'Caveat', cursive;
+  background-color: rgb(255, 255, 255);
+  font-size: 3vw;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about span{
+  font-weight: bold;
+}
+.growth-chart{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 1em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.about-about{
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-data{
+  font-size: 1vw;
+  color: rgba(32, 21, 21, 0.795);
+}
+.bottom a{
+  font-size: 1vw;
+  margin-left: 0;
+}
+.bottom{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-block-start:0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+.htl{
+  float: left;
+  margin-right: 2vw;
+}
+.copyright p{
+  font-size: 1vw;
+  color: rgb(88, 88, 88);
+  text-align: center;
+  padding-bottom: 5vh;
 }
