@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import front from './front.gif'
 import Chart from "react-apexcharts";
+import SignUp from './Signup'
 
 
 function App() {
@@ -45,7 +46,10 @@ function App() {
       }
     ]
   };
-
+  function signup(){
+    var signup = document.getElementById("signup")
+    signup.classList.add("d-none")
+  }
   return (
     <div className="App sm">
       <div className="top-panel ">
@@ -53,7 +57,7 @@ function App() {
           <a className="navbar-brand brand" href="/">Stock Eater</a>
           <div className="navbar-nav d-inline-flex links">
             <div className="nav-item">
-              <a className="nav-link" href="/">SignUp</a>
+              <a className="nav-link" href="/" onClick={signup}>SignUp</a>
             </div>
             <div className="nav-item">
               <a className="nav-link" href="/">Login</a>
@@ -75,7 +79,7 @@ function App() {
           </div>
           <div className="about">
             <div className="container">
-              <p>``We are the best in industry to follow up the stocks and predict the future prices and make your portfolio stronger and reliable.
+              <p className="pt-4 pb-4">``We are the best in industry to follow up the stocks and predict the future prices and make your portfolio stronger and reliable.
                 The way we look at the stocks is different from what others see, we use Deep Learning and AI to make our results consistant and strong`` - <span>Charan Kumar, CEO Dumb Minds</span>
               </p>
             </div>
@@ -104,6 +108,7 @@ function App() {
           </div>
         </div>
       </div>
+      <SignUp/>
     </div>
   );
 }

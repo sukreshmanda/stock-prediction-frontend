@@ -101,3 +101,18 @@ html {
   text-align: center;
   padding-bottom: 5vh;
 }
+.signup{
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 600px;
+  border-radius: 20px;
+  background-image: linear-gradient(rgb(159, 57, 168),black);
+}
+.close{
+  align-items: flex-end;
+}
